@@ -1,0 +1,57 @@
+# Checkerspot
+
+> Checkerspot is an Alameda, California biotechnology company (founded 2016, a Public
+> Benefit Corporation) that designs and produces functional fats and oils through
+> precision fermentation of microalgae. Its biology-driven molecule licensing platform
+> spans algal strain development, an advanced analytical platform, bioinformatics,
+> high-throughput screening, fermentation scale-up and downstream oil refining, built
+> around the proprietary microbe Prototheca moriformis. Checkerspot is a
+> business-to-business ingredient company, not a software vendor: it publishes no
+> public API, no developer portal, no SDK and no machine-readable API contract.
+
+## Company
+
+- [Checkerspot](https://www.checkerspot.com/): Functional lipids from microalgae fermentation.
+- [About Us](https://www.checkerspot.com/about-us/): Founded 2016, headquartered at 1250 Marina Village Parkway, Alameda, CA 94501. A Public Benefit Corporation. CEO John Krzywicki, CTO Casey Lippmeier.
+- [Careers](https://www.checkerspot.com/careers/): Open roles.
+- [Let's Get Started](https://www.checkerspot.com/lets-get-started/): Contact and partnership enquiries - the only inbound channel published.
+
+## Platform
+
+- [Our Platform](https://www.checkerspot.com/our-platform/): Six integrated capabilities - algal strain development, advanced analytical platform, bioinformatics, fermentation scale-up, high-throughput screening, and downstream processing and oil refining. The company reports its Prototheca moriformis microbe exceeds 80% oil content by dry cell weight against a 44% average across 150+ comparable organisms.
+- [Our Solutions](https://www.checkerspot.com/our-solutions/): Mother's milk fats for infant nutrition, rare fatty acids for health, and designer tropical fat alternatives.
+
+## Molecules
+
+- [Molecules](https://www.checkerspot.com/molecules/): The commercial portfolio.
+- [High sn-2 Palmitate Algal Oil](https://www.checkerspot.com/molecules/high-sn-2-palmitate-algal-oil/): A bio-equivalent of the fat found in maternal milk, for infant formula.
+- [Omega-7 Algal Oil](https://www.checkerspot.com/molecules/omega-7-algal-oil/): A premium source of palmitoleic acid.
+- [High Oleic Palm Oil](https://www.checkerspot.com/molecules/high-oleic-palm-oil/): A sustainable tropical fat alternative.
+- [Algolein tG C18/80](https://www.checkerspot.com/molecules/algolein/): Algal oil designed for cosmetic applications.
+
+## News
+
+- [Insights](https://www.checkerspot.com/insights/): Company news and media.
+- [Insights RSS](https://www.checkerspot.com/feed/): RSS 2.0 feed.
+
+## Legal
+
+- [Terms of Service](https://www.checkerspot.com/terms-of-service/)
+- [Privacy Policy](https://www.checkerspot.com/privacy-policy/)
+
+## API surface
+
+- Checkerspot publishes **no public API**. There is no developer portal, no API
+  documentation, no OpenAPI/AsyncAPI/GraphQL contract, no MCP server and no A2A agent
+  card. Every /.well-known/ path probed returns 404, and api./docs./developer./app.
+  subdomains do not resolve. See
+  [well-known probe record](https://github.com/api-evangelist/checkerspot/blob/main/well-known/checkerspot-well-known.yml).
+- No first-party client library exists on npm, PyPI, RubyGems, crates.io, Packagist or
+  NuGet, and there is no github.com/checkerspot organization. See
+  [packages](https://github.com/api-evangelist/checkerspot/blob/main/packages/checkerspot-packages.yml).
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/checkerspot/refs/heads/main/apis.yml): The APIs.json index for this company.
+- [Conformance](https://github.com/api-evangelist/checkerspot/blob/main/conformance/checkerspot-conformance.yml): Applicable food-ingredient regulatory regime; API standards recorded as not-applicable.
+- [Domain security](https://github.com/api-evangelist/checkerspot/blob/main/security/checkerspot-domain-security.yml): TLS, HSTS, DNSSEC, CAA, SPF and DMARC probe results.

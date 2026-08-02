@@ -1,0 +1,44 @@
+generated: '2026-08-02'
+method: searched
+source: registry searches of npm, PyPI, RubyGems, crates.io, Packagist, NuGet and GitHub
+  (2026-08-02)
+result: none
+notes: >-
+  Checkerspot publishes no client SDK, because it publishes no public API. It is a
+  precision-fermentation ingredient and molecule licensing company selling business-to-business
+  into infant nutrition, food and personal care - not a software vendor. Every registry
+  query returned zero results or unrelated fuzzy matches on the string "checkerspot"
+  (the name is a butterfly genus, so the GitHub matches are ecology and student projects).
+  There is no GitHub organization at github.com/checkerspot. No `SDKs` pointer is wired
+  in apis.yml and the sdk_count checks are correctly left unearned.
+packages: []
+registries_checked:
+- registry: npm
+  query: checkerspot
+  result: 0 packages (registry search total 0)
+- registry: pypi
+  query: checkerspot
+  result: 404 - no project
+- registry: github
+  query: orgs/checkerspot
+  result: 404 - the organization does not exist
+- registry: github
+  query: repositories?q=checkerspot
+  result: >-
+    8 unrelated repositories - Jkalifat/checkerspot and wollsale/Reboot-Factory
+    (a "RebootFactory" project), katannyak/Checkerspot, dsrhaslab/Checkerspot,
+    mirelois/CheckerSpot, UBG10001/checkerSpotify, yumaryvasquez/CheckerSpotButterflies,
+    and marianaabarcazama/EphaetonPhylogeo (Baltimore checkerspot butterfly
+    phylogeography). None are first-party Checkerspot, Inc. code.
+- registry: rubygems
+  query: checkerspot
+  result: 0 results
+- registry: crates.io
+  query: checkerspot
+  result: 0 crates
+- registry: packagist
+  query: checkerspot
+  result: 0 results
+- registry: nuget
+  query: checkerspot
+  result: 0 hits

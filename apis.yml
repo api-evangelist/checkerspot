@@ -1,17 +1,47 @@
 aid: checkerspot
 name: Checkerspot
-description: 'Checkerspot is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Checkerspot is an Alameda, California biotechnology company, founded in
+  2016 and incorporated as a Public Benefit Corporation, that designs and produces
+  functional fats and oils through precision fermentation of microalgae. Its biology-driven
+  molecule licensing platform pairs algal strain development, an advanced analytical
+  platform, bioinformatics, high-throughput screening, fermentation scale-up and downstream
+  oil refining, built around the proprietary microbe Prototheca moriformis, which the
+  company reports reaches over 80% oil content by dry cell weight. The commercial molecule
+  portfolio includes a high sn-2 palmitate algal oil that mimics the triglyceride structure
+  of human milk fat for infant nutrition, an Omega-7 (palmitoleic acid) algal oil, a
+  designer high-oleic tropical-fat alternative to palm oil, and Algolein tG C18/80 for
+  cosmetic formulation; earlier work commercialized algae-derived urethane composites
+  through the WNDR Alpine outdoor brand. Checkerspot works through ingredient and manufacturing
+  partners including AAK, Huvepharma and La Fabrique Vegetale, and closed a USD 55 million
+  Series C led by ArrowMark Partners with participation from Cox Enterprises. It is a
+  business-to-business ingredient and molecule licensing company rather than a software
+  vendor: it operates a WordPress marketing site, publishes no developer portal, no API
+  documentation, no SDK and no machine-readable API contract, and has no GitHub organization.'
 url: https://raw.githubusercontent.com/api-evangelist/checkerspot/refs/heads/main/apis.yml
+image: https://www.checkerspot.com/wp-content/uploads/2025/02/Logo-1.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Biotechnology
+- Precision Fermentation
+- Synthetic Biology
+- Microalgae
+- Lipids
+- Fats and Oils
+- Ingredients
+- Infant Nutrition
+- Food Technology
+- Cosmetics
+- Personal Care
+- Materials
+- Sustainability
+- United States
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +50,47 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.checkerspot.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/checkerspot_stock/
+- type: About
+  url: https://www.checkerspot.com/about-us/
+- type: Platform
+  url: https://www.checkerspot.com/our-platform/
+- type: Solutions
+  url: https://www.checkerspot.com/our-solutions/
+- type: Products
+  url: https://www.checkerspot.com/molecules/
+- type: Blog
+  url: https://www.checkerspot.com/insights/
+- type: BlogRSS
+  url: https://www.checkerspot.com/feed/
+- type: Contact
+  url: https://www.checkerspot.com/lets-get-started/
+- type: Support
+  url: https://www.checkerspot.com/lets-get-started/
+- type: Careers
+  url: https://www.checkerspot.com/careers/
+- type: TermsOfService
+  url: https://www.checkerspot.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.checkerspot.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/checkerspot
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/checkerspot
+- type: WellKnown
+  url: well-known/checkerspot-well-known.yml
+- type: DomainSecurity
+  url: security/checkerspot-domain-security.yml
+- type: Packages
+  url: packages/checkerspot-packages.yml
+- type: Conformance
+  url: conformance/checkerspot-conformance.yml
+- type: LLMsTxt
+  url: llms/checkerspot-llms.txt
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

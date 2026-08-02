@@ -1,0 +1,75 @@
+generated: '2026-08-02'
+method: probed
+source: https://www.checkerspot.com/
+host: https://www.checkerspot.com
+notes: >-
+  Checkerspot publishes no /.well-known/ discovery surface. Every RFC 8615 path probed
+  returns 404 on both the apex (checkerspot.com, which 301s to www) and the www host;
+  the WordPress theme answers with its own HTML 404 page, so the bodies are not
+  documents. No llms.txt is published. robots.txt (200) is a stock WordPress file that
+  only disallows /wp-admin/ and sets a crawl-delay of 10 - it names no AI or answer-engine
+  crawlers either way. The only machine-readable surfaces on the domain are the Rank
+  Math SEO sitemap index and the WordPress RSS feed. No API host exists to probe: every
+  conventional API/docs subdomain is NXDOMAIN.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /graphql
+  status: 404
+- path: /robots.txt
+  status: 200
+  content_type: text/plain
+  note: stock WordPress robots.txt; Disallow /wp-admin/, Allow /wp-admin/admin-ajax.php,
+    Crawl-delay 10, Sitemap https://www.checkerspot.com/sitemap_index.xml
+- path: /sitemap_index.xml
+  status: 200
+  content_type: application/xml
+  note: Rank Math SEO sitemap index (post, page, category, local)
+- path: /feed/
+  status: 200
+  content_type: application/rss+xml
+  note: WordPress RSS 2.0 feed - wired as BlogRSS in apis.yml
+other_hosts:
+- host: checkerspot.com
+  resolves: true
+  note: apex 301s to https://www.checkerspot.com/; the same /.well-known/* paths all 404
+- host: api.checkerspot.com
+  resolves: false
+- host: docs.checkerspot.com
+  resolves: false
+- host: developer.checkerspot.com
+  resolves: false
+- host: developers.checkerspot.com
+  resolves: false
+- host: app.checkerspot.com
+  resolves: false
+- host: status.checkerspot.com
+  resolves: false
+- host: trust.checkerspot.com
+  resolves: false
+- host: security.checkerspot.com
+  resolves: false
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl GET with redirects (status codes recorded verbatim), dig for subdomain
+    resolution

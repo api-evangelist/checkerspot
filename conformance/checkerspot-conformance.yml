@@ -1,0 +1,108 @@
+generated: '2026-08-02'
+method: searched
+source: Checkerspot public site, partner announcements and trade-press coverage (2026-08-02
+  web search) plus the live probes recorded in well-known/checkerspot-well-known.yml
+scope: >-
+  Checkerspot publishes no API, so there are no API or cross-cutting technical standards
+  to assert. What the company is actually measured against is the food-ingredient
+  regulatory pathway for a novel precision-fermented lipid - principally US FDA GRAS
+  self-affirmation or notification for its algal oils, and the infant-formula pathway
+  for the high sn-2 palmitate oil, where its partner Huvepharma has publicly taken on
+  preparation of the regulatory dossiers and clinical substantiation. That pathway is
+  recorded here as the applicable regime with its status stated honestly as in-progress
+  rather than achieved. The API/protocol standards block is recorded as not-applicable
+  rather than false, so this file is never mistaken for a compliance posture the company
+  does not claim.
+regulatory_regime:
+- id: fda-gras-novel-food-ingredient
+  name: US FDA Generally Recognized As Safe (GRAS) pathway for a novel algal oil food
+    ingredient
+  conforms: false
+  status: in-progress
+  evidence: >-
+    Checkerspot markets its algal oils as food and nutrition ingredients, which in the
+    US requires GRAS self-affirmation or a GRAS notice to FDA before food use. No FDA
+    GRAS "no questions" letter naming Checkerspot, Inc. was found in the 2026-08-02
+    search; the GRAS notices surfaced for "algal oil" cover DHA-rich Schizochytrium
+    oils from other notifiers, not Checkerspot's sn-2 palmitate or Omega-7 products.
+  note: >-
+    Recorded as conforms:false because no clearance naming Checkerspot has been
+    published, not because the company failed a check. Re-probe on the next pass.
+- id: infant-formula-ingredient-pathway
+  name: Infant-formula ingredient qualification (US FDA infant formula notification /
+    EU novel food) for the high sn-2 palmitate algal oil
+  conforms: false
+  status: in-progress
+  evidence: >-
+    In the October 2025 Checkerspot/Huvepharma partnership announcement, Huvepharma is
+    stated to be responsible for preparation of the regulatory dossiers, clinical
+    substantiation of the ingredient and global distribution - i.e. the regulatory work
+    is underway and not complete. Checkerspot's own molecule page markets the oil as a
+    bio-equivalent of the fat found in maternal milk.
+- id: usda-fsis
+  name: USDA FSIS jurisdiction
+  conforms: false
+  applicable: false
+  evidence: not a meat, poultry or egg product; a fermentation-derived lipid ingredient
+    sits with FDA
+- id: non-gmo-claim
+  name: Non genetically engineered production claim
+  conforms: true
+  applicable: true
+  evidence: >-
+    Checkerspot announced a patent (April 2024, Business Wire) for a non genetically
+    engineered high-oleic microalgae oil, produced by classical strain improvement
+    rather than genetic engineering. This is a company claim backed by a granted
+    patent, not a third-party certification.
+corporate_governance:
+- id: public-benefit-corporation
+  conforms: true
+  evidence: >-
+    Checkerspot states on its About Us page that it operates as a Public Benefit
+    Corporation. Self-declared corporate form; no B Corp certification by B Lab was
+    found.
+api_standards:
+- id: openapi
+  conforms: false
+  applicable: false
+  evidence: no public API contract published (see well-known/checkerspot-well-known.yml)
+- id: oauth2
+  conforms: false
+  applicable: false
+- id: openid-connect
+  conforms: false
+  applicable: false
+- id: rfc9457-problem-details
+  conforms: false
+  applicable: false
+- id: asyncapi
+  conforms: false
+  applicable: false
+- id: mcp
+  conforms: false
+  applicable: false
+- id: a2a
+  conforms: false
+  applicable: false
+  evidence: >-
+    /.well-known/agent-card.json and /.well-known/agent.json both 404 on
+    checkerspot.com and www.checkerspot.com
+- id: rfc9116-security-txt
+  conforms: false
+  applicable: true
+  evidence: /.well-known/security.txt returns 404 on both checkerspot.com and
+    www.checkerspot.com
+information_security_compliance:
+  found: false
+  note: >-
+    No trust center, SOC 2, ISO 27001 or equivalent information-security certification
+    page was found by probe-security-programs.py (vdp=none trust=none) or by search;
+    trust.checkerspot.com and security.checkerspot.com are both NXDOMAIN. No `Compliance`
+    pointer is wired in apis.yml - and the food-ingredient regime above is a food-safety
+    pathway, not a published infosec compliance program, so it does not earn one either.
+domain_security_observed:
+  source: security/checkerspot-domain-security.yml
+  summary: >-
+    www.checkerspot.com serves TLS 1.3 (cert expires 2026-09-18) with no HSTS header.
+    The checkerspot.com domain has SPF and a DMARC record at p=reject, but no DNSSEC
+    and no CAA record.
