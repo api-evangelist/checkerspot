@@ -18,6 +18,17 @@ description: 'Checkerspot is an Alameda, California biotechnology company, found
   vendor: it operates a WordPress marketing site, publishes no developer portal, no API
   documentation, no SDK and no machine-readable API contract, and has no GitHub organization.'
 url: https://raw.githubusercontent.com/api-evangelist/checkerspot/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.checkerspot.com/wp-content/uploads/2025/02/Logo-1.svg
 x-type: company
 x-source: harvest:secondary-market
