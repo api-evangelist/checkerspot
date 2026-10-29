@@ -64,65 +64,91 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Checkerspot is an Alameda, California biotechnology company, founded in 2016 and
-incorporated as a Public Benefit Corporation, that designs and produces functional fats
-and oils through precision fermentation of microalgae. Its biology-driven molecule
-licensing platform pairs algal strain development, an advanced analytical platform,
-bioinformatics, high-throughput screening, fermentation scale-up and downstream oil
-refining, built around the proprietary microbe *Prototheca moriformis* — which the company
-reports reaches over 80% oil content by dry cell weight against a 44% average across 150+
-comparable organisms.
+Checkerspot is an Alameda, California biotechnology company, founded in 2016 and incorporated as a Public Benefit Corporation, that designs and produces functional fats and oils through precision fermentation of microalgae. Its biology-driven molecule licensing platform pairs algal strain development, an advanced analytical platform, bioinformatics, high-throughput screening, fermentation scale-up and downstream oil refining, built around the proprietary microbe Prototheca moriformis, which the company reports reaches over 80% oil content by dry cell weight. The commercial molecule portfolio includes a high sn-2 palmitate algal oil that mimics the triglyceride structure of human milk fat for infant nutrition, an Omega-7 (palmitoleic acid) algal oil, a designer high-oleic tropical-fat alternative to palm oil, and Algolein tG C18/80 for cosmetic formulation; earlier work commercialized algae-derived urethane composites through the WNDR Alpine outdoor brand. Checkerspot works through ingredient and manufacturing partners including AAK, Huvepharma and La Fabrique Vegetale, and closed a USD 55 million Series C led by ArrowMark Partners with participation from Cox Enterprises. It is a business-to-business ingredient and molecule licensing company rather than a software vendor: it operates a WordPress marketing site, publishes no developer portal, no API documentation, no SDK and no machine-readable API contract, and has no GitHub organization.
 
-Molecule portfolio: **High sn-2 Palmitate Algal Oil** (a bio-equivalent of the fat in
-maternal milk, for infant formula), **Omega-7 Algal Oil** (palmitoleic acid), **High Oleic
-Palm Oil** (a designer tropical fat alternative), and **Algolein tG C18/80** (cosmetics).
-Earlier work commercialized algae-derived urethane composites through the WNDR Alpine
-outdoor brand. Partners include AAK, Huvepharma and La Fabrique Végétale. Checkerspot
-closed a USD 55M Series C led by ArrowMark Partners with participation from Cox
-Enterprises.
+**Areas:** Company · Biotechnology · Precision Fermentation · Synthetic Biology · Microalgae · Lipids · Fats and Oils · Ingredients · Infant Nutrition · Food Technology · Cosmetics · Personal Care
 
-- https://www.checkerspot.com/
-- https://forgeglobal.com/checkerspot_stock/
+## Checkerspot on APIs.io
 
-## API surface
+Everything profiled for Checkerspot is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/checkerspot/](https://apis.io/providers/checkerspot/)** — or go straight to one of the APIs or properties below.
 
-**Checkerspot publishes no public API.** Contract discovery (2026-08-02) probed
-`checkerspot.com`, `www.checkerspot.com` and every plausible API host for
-OpenAPI/Swagger, GraphQL, MCP and A2A surfaces:
+### Published properties
 
-- `api.checkerspot.com`, `docs.checkerspot.com`, `developer.checkerspot.com`,
-  `developers.checkerspot.com`, `app.checkerspot.com`, `status.checkerspot.com`,
-  `trust.checkerspot.com`, `security.checkerspot.com` — all NXDOMAIN.
-- `/openapi.json`, `/swagger.json`, `/api-docs`, `/graphql`, `/llms.txt` and every
-  `/.well-known/*` path (including `agent-card.json` and the legacy `agent.json`) — all
-  404 on both the apex and www hosts.
-- No first-party packages on npm, PyPI, RubyGems, crates.io, Packagist or NuGet; no
-  `checkerspot` GitHub organization (404).
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The company sells business-to-business ingredients into infant nutrition, food and
-personal care, so this is an expected and honest result — not a gap.
+#### MCP servers (1)
 
-## What the site does publish
+Model Context Protocol servers that expose the API to agents.
 
-A stock WordPress marketing site (Rank Math SEO). The only machine-readable surfaces are
-the sitemap index (`/sitemap_index.xml`, 200) and the RSS feed (`/feed/`, 200, wired as
-`BlogRSS`). `robots.txt` (200) is the stock WordPress file — it only disallows
-`/wp-admin/` and sets `Crawl-delay: 10`, naming no AI or answer-engine crawlers either
-way. No `llms.txt` is published, so one was generated from the catalog.
+- [Moved to /providers/checkerspot/](https://apis.io/servers/checkerspot/checkerspot/)
 
-## Artifacts
+#### Security (1)
 
-| Path | Type | Method |
-|---|---|---|
-| `well-known/checkerspot-well-known.yml` | WellKnown | probed |
-| `security/checkerspot-domain-security.yml` | DomainSecurity | probed |
-| `packages/checkerspot-packages.yml` | Packages | searched (result: none) |
-| `conformance/checkerspot-conformance.yml` | Conformance | searched |
-| `llms/checkerspot-llms.txt` | LLMsTxt | generated |
+Authentication, trust centre, and vulnerability disclosure.
 
-No security.txt, no vulnerability-disclosure program, no trust center and no published
-information-security certifications were found — so no `Security`, `Compliance` or
-`TrustCenter` pointer is asserted. No `SDKs` pointer either. The applicable regulatory
-regime is the FDA food-ingredient / GRAS pathway (recorded in `conformance/` as
-in-progress, not achieved), which is a food-safety regime and does not earn a
-`Compliance` pointer.
+- [Checkerspot Domain Security](https://apis.io/security/checkerspot/checkerspot-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.checkerspot.com/)
+- [Support](https://www.checkerspot.com/lets-get-started/)
+- [Blog](https://www.checkerspot.com/insights/)
+- [Terms of service](https://www.checkerspot.com/terms-of-service/)
+- [Privacy policy](https://www.checkerspot.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 12.0** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.2** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/checkerspot/](https://apis.io/providers/checkerspot/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Checkerspot: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/checkerspot/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
